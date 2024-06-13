@@ -2,6 +2,13 @@
   "name": "budgetbuddy",
   "version": "1.0.0",
   "main": "expo/AppEntry.js",
+  "license": "MIT",
+  "description": "Application made from a freelancer developer, to a freelancer developer",
+  "author": {
+    "name": "Carlos 'Ceagah' Henrique",
+    "url": "https://www.ceagah.vercel.app",
+    "email": "carlosceagah@gmail.com"
+  },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
