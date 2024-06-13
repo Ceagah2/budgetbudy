@@ -833,6 +833,21 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.8.1.tgz#182b5a4704ef8ad91bde93f7a860a88fd92c79a3"
   integrity sha512-KOEGMu6dmJZtpadb476IsZBclKvILjopjUii3V+7MnXIQCYh8W3NgNcgwo21n9LXZX6EDIKvqfjYxXebDwxKmQ==
 
+"@expo-google-fonts/lato@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/lato/-/lato-0.2.3.tgz#32456b5c49d9f84d2b22ecfa8f50027555439e9c"
+  integrity sha512-X56FEZn2GNYtI2/UqyOps7TShuDwi/k9JKa7VzM0x2ywBOnhTtXGq2IsZyNPzT9KnQA/ID84F9yiMS8e3obu0g==
+
+"@expo-google-fonts/playfair-display@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/playfair-display/-/playfair-display-0.2.3.tgz#892805793743fc5d110a39d31442ae269d43de47"
+  integrity sha512-J4H/k29XpbM7WDfC/rsJk9qOt/mmKDLFi4UFWxZxmleQoMp8KYRJhAFlESxRQeecYdp0QNcYpDlTzjs8tHddvg==
+
+"@expo-google-fonts/roboto-slab@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/roboto-slab/-/roboto-slab-0.2.3.tgz#5497f37224af3f75c20b4749c6c6bafdf37cc54d"
+  integrity sha512-CnjetZ1wG0Vp1gH63GvUMo1ly0Agd+9GsKro24oB2cqpPS6hKzKOnT0btsYfGUB2/DqngB5AN7e56F+XLf4MCg==
+
 "@expo/bunyan@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@expo/bunyan/-/bunyan-4.0.0.tgz#be0c1de943c7987a9fbd309ea0b1acd605890c7b"
