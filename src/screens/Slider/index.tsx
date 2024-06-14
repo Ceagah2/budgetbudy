@@ -1,12 +1,20 @@
 import Icon from "@expo/vector-icons/MaterialIcons";
+import { useNavigation } from "@react-navigation/native";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import AppIntroSlider from "react-native-app-intro-slider";
 import Clock from '../../../assets/img/clock.png';
 import Graphs from '../../../assets/img/graph.png';
 import Notification from '../../../assets/img/notification.png';
 import Profile from '../../../assets/img/profile.png';
+import { saveData } from '../../hooks/useStorage';
+import { RootStackParamList } from "../../shared/navigationTypes";
 import * as S from './styles';
-
+ type HomeScreenNavigationProp = NativeStackNavigationProp<
+   RootStackParamList,
+   "Home"
+ >;
 export default function Slider(){
+  const navigate = useNavigation<HomeScreenNavigationProp>();
 
   const slides = [
     {
@@ -48,10 +56,14 @@ export default function Slider(){
       </S.SlideContainer>
     );
   };
+    const OnDone = () => {
+      saveData("@onboarding", 'true')
+      navigate.navigate('Home')
+    };
 
   const RenderDoneButton = () => {
     return(
-      <S.DoneButton>
+      <S.DoneButton onPress={() => OnDone()}>
         <S.DoneText>
           <Icon name='done-outline' size={20}  />
         </S.DoneText>
@@ -59,12 +71,14 @@ export default function Slider(){
     )
   }
 
+
   
 return(
     <AppIntroSlider 
       data={slides}
       renderItem={RenderItem}
       renderDoneButton={RenderDoneButton}
+      onDone={OnDone}
       showDoneButton
       showSkipButton={false}
     />
